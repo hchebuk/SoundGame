@@ -5,9 +5,8 @@ using UnityEngine;
 public class WinTrigger : MonoBehaviour
 {
     public GameManager gm;
-    void OnTrigger()
+    void OnTriggerEnter()
     {
-        //Winnning Text not showing need to fix.
         gm.CompleteLevel();
     }
 }

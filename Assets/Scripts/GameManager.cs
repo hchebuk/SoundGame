@@ -10,8 +10,10 @@ public class GameManager : MonoBehaviour
     bool GameEnded = false;
     public float restarttime; //Delay to restart after losing
     public GameObject LevelWinText;
+
     public void CompleteLevel() //Function to activate winning game text and restart after
-    {
+    {   
+        Debug.Log ("LEVEL WON");
         LevelWinText.SetActive(true);
         Invoke("restart", 5f); //Delays by 5 seconds then restarts
     }
