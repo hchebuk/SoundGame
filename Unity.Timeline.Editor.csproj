@@ -93,10 +93,10 @@
     <Compile Include="Library\PackageCache\com.unity.timeline@1.4.6\Editor\Window\TimelineWindow_ActiveTimeline.cs" />
     <Compile Include="Library\PackageCache\com.unity.timeline@1.4.6\Editor\Manipulators\Utils\EditModeMixUtils.cs" />
     <Compile Include="Library\PackageCache\com.unity.timeline@1.4.6\Editor\Extensions\AnimationTrackExtensions.cs" />
-    <Compile Include="Library\PackageCache\com.unity.timeline@1.4.6\Editor\Window\WindowConstants.cs" />
     <Compile Include="Library\PackageCache\com.unity.timeline@1.4.6\Editor\Manipulators\Sequence\RectangleTool.cs" />
     <Compile Include="Library\PackageCache\com.unity.timeline@1.4.6\Editor\Manipulators\EditMode.cs" />
     <Compile Include="Library\PackageCache\com.unity.timeline@1.4.6\Editor\treeview\Snapping\ISnappable.cs" />
+    <Compile Include="Library\PackageCache\com.unity.timeline@1.4.6\Editor\Window\WindowConstants.cs" />
     <Compile Include="Library\PackageCache\com.unity.timeline@1.4.6\Editor\Manipulators\Sequence\TrackZoom.cs" />
     <Compile Include="Library\PackageCache\com.unity.timeline@1.4.6\Editor\Attributes\TimelineShortcutAttribute.cs" />
     <Compile Include="Library\PackageCache\com.unity.timeline@1.4.6\Editor\treeview\Drawers\Layers\ClipsLayer.cs" />

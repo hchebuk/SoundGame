@@ -56,26 +56,31 @@
     <Analyzer Include="C:\Program Files (x86)\Microsoft Visual Studio Tools for Unity\16.0\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Scripts\ObstacleConductor.cs" />
-    <Compile Include="Assets\Scripts\MainMenu.cs" />
-    <Compile Include="Assets\Scripts\PlayerMovement.cs" />
-    <Compile Include="Assets\Scripts\PlayerCollision.cs" />
-    <Compile Include="Assets\Scripts\JetstreamConductor.cs" />
+    <Compile Include="Assets\Scripts\HardLevel\Checkpoint.cs" />
+    <Compile Include="Assets\Scripts\HardLevel\ObstacleConductor.cs" />
+    <Compile Include="Assets\Scripts\HardLevel\PlayerPos.cs" />
+    <Compile Include="Assets\Scripts\HardLevel\MainMenu.cs" />
+    <Compile Include="Assets\Scripts\HardLevel\PlayerMovement.cs" />
+    <Compile Include="Assets\Scripts\HardLevel\PlayerCollision.cs" />
+    <Compile Include="Assets\Scripts\HardLevel\JetstreamConductor.cs" />
+    <Compile Include="Assets\Scripts\EasyLevel\Level0ObstacleConductor.cs" />
     <Compile Include="Assets\Scripts\GameManager.cs" />
-    <Compile Include="Assets\Scripts\Rotator.cs" />
-    <Compile Include="Assets\Scripts\ParticleConductor.cs" />
-    <Compile Include="Assets\Scripts\PlatformConductor.cs" />
-    <Compile Include="Assets\Scripts\MusicConductor.cs" />
-    <Compile Include="Assets\Scripts\BlossomConductor.cs" />
-    <Compile Include="Assets\Scripts\WinTrigger.cs" />
-    <Compile Include="Assets\Scripts\GameMaster.cs" />
-    <Compile Include="Assets\Scripts\Checkpoint.cs" />
-    <Compile Include="Assets\Scripts\PlayerPos.cs" />
+    <Compile Include="Assets\Scripts\HardLevel\Rotator.cs" />
+    <Compile Include="Assets\Scripts\HardLevel\ParticleConductor.cs" />
+    <Compile Include="Assets\Scripts\EasyLevel\Level0ParticleConductor.cs" />
+    <Compile Include="Assets\Scripts\HardLevel\GameMaster.cs" />
+    <Compile Include="Assets\Scripts\HardLevel\PlatformConductor.cs" />
+    <Compile Include="Assets\Scripts\HardLevel\MusicConductor.cs" />
+    <Compile Include="Assets\Scripts\HardLevel\BlossomConductor.cs" />
+    <Compile Include="Assets\Scripts\HardLevel\WinTrigger.cs" />
+    <Compile Include="Assets\Scripts\HardLevel\LevelSelect.cs" />
+    <Compile Include="Assets\Scripts\LevelSelector.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap.shader" />
+     <None Include="Assets\Shaders\Level0PlayerShader.shader" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro_Mobile.cginc" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF SSD.shader" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Surface-Mobile.shader" />
@@ -89,6 +94,7 @@
      <None Include="Assets\TextMesh Pro\Shaders\TMPro_Properties.cginc" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro_Surface.cginc" />
      <None Include="Assets\TextMesh Pro\Resources\LineBreaking Following Characters.txt" />
+     <None Include="Assets\Shaders\Platform0Shader.shader" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Masking.shader" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF Overlay.shader" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap-Mobile.shader" />
