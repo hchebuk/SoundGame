@@ -7,6 +7,9 @@ TagManager:
   - Obstacle
   - PickUp
   - GM
+  - SideWall
+  - SideWallWest
+  - SideWallEast
   layers:
   - Default
   - TransparentFX
