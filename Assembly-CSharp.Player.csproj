@@ -73,8 +73,7 @@
     <Compile Include="Assets\Scripts\HardLevel\MusicConductor.cs" />
     <Compile Include="Assets\Scripts\HardLevel\BlossomConductor.cs" />
     <Compile Include="Assets\Scripts\HardLevel\WinTrigger.cs" />
-    <Compile Include="Assets\Scripts\HardLevel\LevelSelect.cs" />
-    <Compile Include="Assets\Scripts\LevelSelector.cs" />
+    <Compile Include="Assets\Scripts\HardLevel\LevelSelector.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
