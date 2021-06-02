@@ -6,8 +6,9 @@ public class Checkpoint : MonoBehaviour
 {
     private GameMaster gm;
     public GameObject player;
-    public MusicConductor mc;
+    public tracker track; 
     public AudioSource musicSource;
+    public MusicConductor mc;
     public float musicCheckpoint;
 
     void Start()
@@ -19,8 +20,8 @@ public class Checkpoint : MonoBehaviour
         if (other.CompareTag("Player")){
             gm.lastCheckPointPos = player.transform.position;
             gm.lastCheckPointPos.y = 0.3f; //make sure we don't start in the air
-            mc.lastCheck  = mc.songPosition;
-            mc.checkPoint = true;
+            track.lastCheck  = mc.musicSource.time;
+            track.checkPoint = true;
             Debug.Log("Checkpoint given");            
         }
     }

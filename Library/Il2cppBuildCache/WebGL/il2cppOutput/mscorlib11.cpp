@@ -10990,6 +10990,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* Single_ToString_m80E7ABED4F4D73F2BE
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR NumberFormatInfo_t58780B43B6A840C38FD10C50CDFE2128884CAD1D * NumberFormatInfo_GetInstance_mE5108A48B8BFDB2158C05951FACC08AFB09FDDBB (RuntimeObject* ___formatProvider0, const RuntimeMethod* method);
 // System.String System.Single::ToString(System.IFormatProvider)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* Single_ToString_mF554E46C641C609768519378FB0486DFD7F82985 (float* __this, RuntimeObject* ___provider0, const RuntimeMethod* method);
+// System.String System.Single::ToString(System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* Single_ToString_m15F10F2AFF80750906CEFCFB456EBA84F9D2E8D7 (float* __this, String_t* ___format0, const RuntimeMethod* method);
 // System.String System.Single::ToString(System.String,System.IFormatProvider)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* Single_ToString_m7631D332703B4197EAA7DC0BA067CE7E16334D8B (float* __this, String_t* ___format0, RuntimeObject* ___provider1, const RuntimeMethod* method);
 // System.Single System.Single::Parse(System.String,System.Globalization.NumberStyles,System.Globalization.NumberFormatInfo)
@@ -21192,6 +21194,27 @@ IL2CPP_EXTERN_C  String_t* Single_ToString_mF554E46C641C609768519378FB0486DFD7F8
 	_returnValue = Single_ToString_mF554E46C641C609768519378FB0486DFD7F82985(_thisAdjusted, ___provider0, method);
 	return _returnValue;
 }
+// System.String System.Single::ToString(System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* Single_ToString_m15F10F2AFF80750906CEFCFB456EBA84F9D2E8D7 (float* __this, String_t* ___format0, const RuntimeMethod* method)
+{
+	{
+		float L_0 = *((float*)__this);
+		String_t* L_1 = ___format0;
+		NumberFormatInfo_t58780B43B6A840C38FD10C50CDFE2128884CAD1D * L_2;
+		L_2 = NumberFormatInfo_get_CurrentInfo_m604B9BFDE58530F94955E0EF1A523D37EA87DF02(/*hidden argument*/NULL);
+		String_t* L_3;
+		L_3 = Number_FormatSingle_m39E3D637D59C47BA92F6E95966C0AAB1A0D38D89(L_0, L_1, L_2, /*hidden argument*/NULL);
+		return L_3;
+	}
+}
+IL2CPP_EXTERN_C  String_t* Single_ToString_m15F10F2AFF80750906CEFCFB456EBA84F9D2E8D7_AdjustorThunk (RuntimeObject * __this, String_t* ___format0, const RuntimeMethod* method)
+{
+	int32_t _offset = 1;
+	float* _thisAdjusted = reinterpret_cast<float*>(__this + _offset);
+	String_t* _returnValue;
+	_returnValue = Single_ToString_m15F10F2AFF80750906CEFCFB456EBA84F9D2E8D7(_thisAdjusted, ___format0, method);
+	return _returnValue;
+}
 // System.String System.Single::ToString(System.String,System.IFormatProvider)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* Single_ToString_m7631D332703B4197EAA7DC0BA067CE7E16334D8B (float* __this, String_t* ___format0, RuntimeObject* ___provider1, const RuntimeMethod* method)
 {
@@ -24980,7 +25003,7 @@ IL_004b:
 			V_2 = L_17;
 			Type_t * L_18 = ___type0;
 			FieldInfoU5BU5D_tD84513FCA07C63AAFE671A5B39E3ADD6E903938E* L_19;
-			L_19 = VirtFuncInvoker1< FieldInfoU5BU5D_tD84513FCA07C63AAFE671A5B39E3ADD6E903938E*, int32_t >::Invoke(43 /* System.Reflection.FieldInfo[] System.Type::GetFields(System.Reflection.BindingFlags) */, L_18, ((int32_t)52));
+			L_19 = VirtFuncInvoker1< FieldInfoU5BU5D_tD84513FCA07C63AAFE671A5B39E3ADD6E903938E*, int32_t >::Invoke(44 /* System.Reflection.FieldInfo[] System.Type::GetFields(System.Reflection.BindingFlags) */, L_18, ((int32_t)52));
 			V_5 = L_19;
 			V_6 = 0;
 			goto IL_00f3;
@@ -29680,7 +29703,7 @@ IL_001c:
 	{
 		Type_t * L_16 = V_6;
 		Type_t * L_17;
-		L_17 = VirtFuncInvoker0< Type_t * >::Invoke(92 /* System.Type System.Type::GetElementType() */, L_16);
+		L_17 = VirtFuncInvoker0< Type_t * >::Invoke(93 /* System.Type System.Type::GetElementType() */, L_16);
 		V_6 = L_17;
 	}
 
@@ -29696,7 +29719,7 @@ IL_0049:
 		Type_t * L_19 = V_6;
 		RuntimeObject * L_20 = V_5;
 		bool L_21;
-		L_21 = VirtFuncInvoker1< bool, RuntimeObject * >::Invoke(102 /* System.Boolean System.Type::IsInstanceOfType(System.Object) */, L_19, L_20);
+		L_21 = VirtFuncInvoker1< bool, RuntimeObject * >::Invoke(104 /* System.Boolean System.Type::IsInstanceOfType(System.Object) */, L_19, L_20);
 		if (L_21)
 		{
 			goto IL_00b1;
@@ -30857,7 +30880,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void StackTrace_GetFullNameForStackTrace_mB5F
 		V_0 = L_1;
 		Type_t * L_2 = V_0;
 		bool L_3;
-		L_3 = VirtFuncInvoker0< bool >::Invoke(69 /* System.Boolean System.Type::get_IsGenericType() */, L_2);
+		L_3 = VirtFuncInvoker0< bool >::Invoke(70 /* System.Boolean System.Type::get_IsGenericType() */, L_2);
 		if (!L_3)
 		{
 			goto IL_001e;
@@ -30866,7 +30889,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void StackTrace_GetFullNameForStackTrace_mB5F
 	{
 		Type_t * L_4 = V_0;
 		bool L_5;
-		L_5 = VirtFuncInvoker0< bool >::Invoke(70 /* System.Boolean System.Type::get_IsGenericTypeDefinition() */, L_4);
+		L_5 = VirtFuncInvoker0< bool >::Invoke(71 /* System.Boolean System.Type::get_IsGenericTypeDefinition() */, L_4);
 		if (L_5)
 		{
 			goto IL_001e;
@@ -30875,7 +30898,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void StackTrace_GetFullNameForStackTrace_mB5F
 	{
 		Type_t * L_6 = V_0;
 		Type_t * L_7;
-		L_7 = VirtFuncInvoker0< Type_t * >::Invoke(94 /* System.Type System.Type::GetGenericTypeDefinition() */, L_6);
+		L_7 = VirtFuncInvoker0< Type_t * >::Invoke(95 /* System.Type System.Type::GetGenericTypeDefinition() */, L_6);
 		V_0 = L_7;
 	}
 
@@ -31048,7 +31071,7 @@ IL_00fb:
 		V_8 = L_64;
 		Type_t * L_65 = V_8;
 		bool L_66;
-		L_66 = VirtFuncInvoker0< bool >::Invoke(69 /* System.Boolean System.Type::get_IsGenericType() */, L_65);
+		L_66 = VirtFuncInvoker0< bool >::Invoke(70 /* System.Boolean System.Type::get_IsGenericType() */, L_65);
 		if (!L_66)
 		{
 			goto IL_0121;
@@ -31057,7 +31080,7 @@ IL_00fb:
 	{
 		Type_t * L_67 = V_8;
 		bool L_68;
-		L_68 = VirtFuncInvoker0< bool >::Invoke(70 /* System.Boolean System.Type::get_IsGenericTypeDefinition() */, L_67);
+		L_68 = VirtFuncInvoker0< bool >::Invoke(71 /* System.Boolean System.Type::get_IsGenericTypeDefinition() */, L_67);
 		if (L_68)
 		{
 			goto IL_0121;
@@ -31066,7 +31089,7 @@ IL_00fb:
 	{
 		Type_t * L_69 = V_8;
 		Type_t * L_70;
-		L_70 = VirtFuncInvoker0< Type_t * >::Invoke(94 /* System.Type System.Type::GetGenericTypeDefinition() */, L_69);
+		L_70 = VirtFuncInvoker0< Type_t * >::Invoke(95 /* System.Type System.Type::GetGenericTypeDefinition() */, L_69);
 		V_8 = L_70;
 	}
 

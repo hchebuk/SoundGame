@@ -8313,6 +8313,53 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1762317475914102610, guid: fd325df7d843e4a44a123bbce642b2ab, type: 3}
   m_PrefabInstance: {fileID: 172999216}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &173787344
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 173787346}
+  - component: {fileID: 173787345}
+  m_Layer: 0
+  m_Name: tracker
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &173787345
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 173787344}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd19e8bf8b817e0408888ecadee4e8f3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  checkPoint: 0
+  died: 0
+  lastCheck: 0
+  songPosTracker: 0
+--- !u!4 &173787346
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 173787344}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 4.407344, y: -1.4271069, z: 88.02869}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 18
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &176630289 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5138740891342835689, guid: ab7d4b0fd35943a4996ee80608043484, type: 3}
@@ -40139,11 +40186,8 @@ MonoBehaviour:
   songPosition: 60
   songPositionInBeats: 0
   dspSongTime: 0
-  lastCheck: 0
-  deathTime: 0
-  checkPoint: 0
-  died: 0
-  musicSource: {fileID: 0}
+  track: {fileID: 173787345}
+  musicSource: {fileID: 1396960770}
 --- !u!1001 &1399951490
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -43246,6 +43290,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   movement: {fileID: 1570858149}
   countText: {fileID: 936096856}
+  rb: {fileID: 0}
 --- !u!114 &1570858152
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -43258,8 +43303,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 88ce6cab00340de4f8680181cc7ad815, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mc: {fileID: 1396960772}
   check: {fileID: 302050216}
+  track: {fileID: 173787345}
 --- !u!1001 &1572641953
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -57475,9 +57520,17 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1396960772}
     - target: {fileID: 8953261096436334291, guid: 66fc76ec35e7232449b4c07d4efd4c89, type: 3}
+      propertyPath: track
+      value: 
+      objectReference: {fileID: 173787345}
+    - target: {fileID: 8953261096436334291, guid: 66fc76ec35e7232449b4c07d4efd4c89, type: 3}
       propertyPath: player
       value: 
       objectReference: {fileID: 1570858144}
+    - target: {fileID: 8953261096436334291, guid: 66fc76ec35e7232449b4c07d4efd4c89, type: 3}
+      propertyPath: tracker
+      value: 
+      objectReference: {fileID: 173787344}
     - target: {fileID: 8953261096436334291, guid: 66fc76ec35e7232449b4c07d4efd4c89, type: 3}
       propertyPath: musicSource
       value: 
@@ -57496,7 +57549,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8953261096436334300, guid: 66fc76ec35e7232449b4c07d4efd4c89, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1.4700003
+      value: -5.19
       objectReference: {fileID: 0}
     - target: {fileID: 8953261096436334300, guid: 66fc76ec35e7232449b4c07d4efd4c89, type: 3}
       propertyPath: m_LocalPosition.y

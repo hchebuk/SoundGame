@@ -1,6 +1,5 @@
 {"msg":"init","dagFile":"artifacts\\tundra.dag","targets":[]}
-{"msg":"newNode","annotation":"WriteResponseFile artifacts/rsp/16169610183671123646.rsp","index":1}
-{"msg":"noderesult","annotation":"WriteResponseFile artifacts/rsp/16169610183671123646.rsp","index":1,"exitcode":0}
-{"msg":"newNode","annotation":"Il2Cpp C:/Users/Stephen/Desktop/Game Project/CIS-410/SoundsGood/Library/Il2cppBuildCache/WebGL/Native/build.bc","index":2}
-{"msg":"noderesult","annotation":"Il2Cpp C:/Users/Stephen/Desktop/Game Project/CIS-410/SoundsGood/Library/Il2cppBuildCache/WebGL/Native/build.bc","index":2,"exitcode":0}
-{"msg":"newNode","annotation":"all_tundra_nodes","index":0}
+{"msg":"newNode","annotation":"WriteResponseFile artifacts/rsp/14442957004009432531.rsp","index":1}
+{"msg":"noderesult","annotation":"WriteResponseFile artifacts/rsp/14442957004009432531.rsp","index":1,"exitcode":0}
+{"msg":"newNode","annotation":"Il2Cpp C:/Users/hcheb/Desktop/Computer Science/SoundGame/Library/Il2cppBuildCache/WebGL/Native/build.bc","index":2}
+{"msg":"noderesult","annotation":"Il2Cpp C:/Users/hcheb/Desktop/Computer Science/SoundGame/Library/Il2cppBuildCache/WebGL/Native/build.bc","index":2,"exitcode":0}

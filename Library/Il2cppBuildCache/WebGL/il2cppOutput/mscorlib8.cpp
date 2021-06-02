@@ -28462,7 +28462,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ObjectReader_CheckSerializable_mB42DDF24
 	{
 		Type_t * L_0 = ___t0;
 		bool L_1;
-		L_1 = VirtFuncInvoker0< bool >::Invoke(66 /* System.Boolean System.Type::get_IsSerializable() */, L_0);
+		L_1 = VirtFuncInvoker0< bool >::Invoke(67 /* System.Boolean System.Type::get_IsSerializable() */, L_0);
 		if (L_1)
 		{
 			goto IL_003c;
@@ -33227,7 +33227,7 @@ IL_0010:
 		WriteObjectInfo_t73F5AD7990B2851B876C36F11D16BB12E322D22C * L_11 = ___objectInfo0;
 		Type_t * L_12 = L_11->get_objectType_2();
 		Type_t * L_13;
-		L_13 = VirtFuncInvoker0< Type_t * >::Invoke(92 /* System.Type System.Type::GetElementType() */, L_12);
+		L_13 = VirtFuncInvoker0< Type_t * >::Invoke(93 /* System.Type System.Type::GetElementType() */, L_12);
 		V_3 = L_13;
 		V_4 = (WriteObjectInfo_t73F5AD7990B2851B876C36F11D16BB12E322D22C *)NULL;
 		Type_t * L_14 = V_3;

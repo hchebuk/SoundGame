@@ -4707,36 +4707,36 @@ struct  Random_t6C9E9775A149D0ADCFEB4B252C408F03EE870118  : public RuntimeObject
 {
 public:
 	// System.Int32 System.Random::inext
-	int32_t ___inext_0;
+	int32_t ___inext_3;
 	// System.Int32 System.Random::inextp
-	int32_t ___inextp_1;
+	int32_t ___inextp_4;
 	// System.Int32[] System.Random::SeedArray
-	Int32U5BU5D_t70F1BDC14B1786481B176D6139A5E3B87DC54C32* ___SeedArray_2;
+	Int32U5BU5D_t70F1BDC14B1786481B176D6139A5E3B87DC54C32* ___SeedArray_5;
 
 public:
-	inline static int32_t get_offset_of_inext_0() { return static_cast<int32_t>(offsetof(Random_t6C9E9775A149D0ADCFEB4B252C408F03EE870118, ___inext_0)); }
-	inline int32_t get_inext_0() const { return ___inext_0; }
-	inline int32_t* get_address_of_inext_0() { return &___inext_0; }
-	inline void set_inext_0(int32_t value)
+	inline static int32_t get_offset_of_inext_3() { return static_cast<int32_t>(offsetof(Random_t6C9E9775A149D0ADCFEB4B252C408F03EE870118, ___inext_3)); }
+	inline int32_t get_inext_3() const { return ___inext_3; }
+	inline int32_t* get_address_of_inext_3() { return &___inext_3; }
+	inline void set_inext_3(int32_t value)
 	{
-		___inext_0 = value;
+		___inext_3 = value;
 	}
 
-	inline static int32_t get_offset_of_inextp_1() { return static_cast<int32_t>(offsetof(Random_t6C9E9775A149D0ADCFEB4B252C408F03EE870118, ___inextp_1)); }
-	inline int32_t get_inextp_1() const { return ___inextp_1; }
-	inline int32_t* get_address_of_inextp_1() { return &___inextp_1; }
-	inline void set_inextp_1(int32_t value)
+	inline static int32_t get_offset_of_inextp_4() { return static_cast<int32_t>(offsetof(Random_t6C9E9775A149D0ADCFEB4B252C408F03EE870118, ___inextp_4)); }
+	inline int32_t get_inextp_4() const { return ___inextp_4; }
+	inline int32_t* get_address_of_inextp_4() { return &___inextp_4; }
+	inline void set_inextp_4(int32_t value)
 	{
-		___inextp_1 = value;
+		___inextp_4 = value;
 	}
 
-	inline static int32_t get_offset_of_SeedArray_2() { return static_cast<int32_t>(offsetof(Random_t6C9E9775A149D0ADCFEB4B252C408F03EE870118, ___SeedArray_2)); }
-	inline Int32U5BU5D_t70F1BDC14B1786481B176D6139A5E3B87DC54C32* get_SeedArray_2() const { return ___SeedArray_2; }
-	inline Int32U5BU5D_t70F1BDC14B1786481B176D6139A5E3B87DC54C32** get_address_of_SeedArray_2() { return &___SeedArray_2; }
-	inline void set_SeedArray_2(Int32U5BU5D_t70F1BDC14B1786481B176D6139A5E3B87DC54C32* value)
+	inline static int32_t get_offset_of_SeedArray_5() { return static_cast<int32_t>(offsetof(Random_t6C9E9775A149D0ADCFEB4B252C408F03EE870118, ___SeedArray_5)); }
+	inline Int32U5BU5D_t70F1BDC14B1786481B176D6139A5E3B87DC54C32* get_SeedArray_5() const { return ___SeedArray_5; }
+	inline Int32U5BU5D_t70F1BDC14B1786481B176D6139A5E3B87DC54C32** get_address_of_SeedArray_5() { return &___SeedArray_5; }
+	inline void set_SeedArray_5(Int32U5BU5D_t70F1BDC14B1786481B176D6139A5E3B87DC54C32* value)
 	{
-		___SeedArray_2 = value;
-		Il2CppCodeGenWriteBarrier((void**)(&___SeedArray_2), (void*)value);
+		___SeedArray_5 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&___SeedArray_5), (void*)value);
 	}
 };
 
@@ -19377,7 +19377,7 @@ IL_0009:
 	{
 		Type_t * L_1 = V_0;
 		Type_t * L_2;
-		L_2 = VirtFuncInvoker0< Type_t * >::Invoke(92 /* System.Type System.Type::GetElementType() */, L_1);
+		L_2 = VirtFuncInvoker0< Type_t * >::Invoke(93 /* System.Type System.Type::GetElementType() */, L_1);
 		V_0 = L_2;
 	}
 
@@ -19528,7 +19528,7 @@ IL_0014:
 		Type_t * L_8 = L_7;
 		bool L_9 = ___serialization3;
 		String_t* L_10;
-		L_10 = VirtFuncInvoker1< String_t*, bool >::Invoke(105 /* System.String System.Type::FormatTypeName(System.Boolean) */, L_8, L_9);
+		L_10 = VirtFuncInvoker1< String_t*, bool >::Invoke(107 /* System.String System.Type::FormatTypeName(System.Boolean) */, L_8, L_9);
 		V_1 = L_10;
 		bool L_11;
 		L_11 = Type_get_IsByRef_mDB28F5482F9AE4407101B294CD3ADB01106CA4A3(L_8, /*hidden argument*/NULL);
@@ -30904,7 +30904,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Random__ctor_m4372E46E0155A2BA0FA18FB6C0
 	int32_t G_B3_0 = 0;
 	{
 		Int32U5BU5D_t70F1BDC14B1786481B176D6139A5E3B87DC54C32* L_0 = (Int32U5BU5D_t70F1BDC14B1786481B176D6139A5E3B87DC54C32*)(Int32U5BU5D_t70F1BDC14B1786481B176D6139A5E3B87DC54C32*)SZArrayNew(Int32U5BU5D_t70F1BDC14B1786481B176D6139A5E3B87DC54C32_il2cpp_TypeInfo_var, (uint32_t)((int32_t)56));
-		__this->set_SeedArray_2(L_0);
+		__this->set_SeedArray_5(L_0);
 		Object__ctor_m88880E0413421D13FD95325EDCE231707CE1F405(__this, /*hidden argument*/NULL);
 		int32_t L_1 = ___Seed0;
 		if ((((int32_t)L_1) == ((int32_t)((int32_t)-2147483648LL))))
@@ -30931,7 +30931,7 @@ IL_0028:
 		V_3 = G_B3_0;
 		int32_t L_4 = V_3;
 		V_1 = ((int32_t)il2cpp_codegen_subtract((int32_t)((int32_t)161803398), (int32_t)L_4));
-		Int32U5BU5D_t70F1BDC14B1786481B176D6139A5E3B87DC54C32* L_5 = __this->get_SeedArray_2();
+		Int32U5BU5D_t70F1BDC14B1786481B176D6139A5E3B87DC54C32* L_5 = __this->get_SeedArray_5();
 		int32_t L_6 = V_1;
 		(L_5)->SetAtUnchecked(static_cast<il2cpp_array_size_t>(((int32_t)55)), (int32_t)L_6);
 		V_2 = 1;
@@ -30943,7 +30943,7 @@ IL_0042:
 	{
 		int32_t L_7 = V_4;
 		V_0 = ((int32_t)((int32_t)((int32_t)il2cpp_codegen_multiply((int32_t)((int32_t)21), (int32_t)L_7))%(int32_t)((int32_t)55)));
-		Int32U5BU5D_t70F1BDC14B1786481B176D6139A5E3B87DC54C32* L_8 = __this->get_SeedArray_2();
+		Int32U5BU5D_t70F1BDC14B1786481B176D6139A5E3B87DC54C32* L_8 = __this->get_SeedArray_5();
 		int32_t L_9 = V_0;
 		int32_t L_10 = V_2;
 		(L_8)->SetAtUnchecked(static_cast<il2cpp_array_size_t>(L_9), (int32_t)L_10);
@@ -30963,7 +30963,7 @@ IL_0042:
 
 IL_0064:
 	{
-		Int32U5BU5D_t70F1BDC14B1786481B176D6139A5E3B87DC54C32* L_15 = __this->get_SeedArray_2();
+		Int32U5BU5D_t70F1BDC14B1786481B176D6139A5E3B87DC54C32* L_15 = __this->get_SeedArray_5();
 		int32_t L_16 = V_0;
 		int32_t L_17 = L_16;
 		int32_t L_18 = (L_15)->GetAtUnchecked(static_cast<il2cpp_array_size_t>(L_17));
@@ -30993,16 +30993,16 @@ IL_007e:
 
 IL_0083:
 	{
-		Int32U5BU5D_t70F1BDC14B1786481B176D6139A5E3B87DC54C32* L_21 = __this->get_SeedArray_2();
+		Int32U5BU5D_t70F1BDC14B1786481B176D6139A5E3B87DC54C32* L_21 = __this->get_SeedArray_5();
 		int32_t L_22 = V_6;
 		int32_t* L_23 = ((L_21)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_22)));
 		int32_t L_24 = *((int32_t*)L_23);
-		Int32U5BU5D_t70F1BDC14B1786481B176D6139A5E3B87DC54C32* L_25 = __this->get_SeedArray_2();
+		Int32U5BU5D_t70F1BDC14B1786481B176D6139A5E3B87DC54C32* L_25 = __this->get_SeedArray_5();
 		int32_t L_26 = V_6;
 		int32_t L_27 = ((int32_t)il2cpp_codegen_add((int32_t)1, (int32_t)((int32_t)((int32_t)((int32_t)il2cpp_codegen_add((int32_t)L_26, (int32_t)((int32_t)30)))%(int32_t)((int32_t)55)))));
 		int32_t L_28 = (L_25)->GetAtUnchecked(static_cast<il2cpp_array_size_t>(L_27));
 		*((int32_t*)L_23) = (int32_t)((int32_t)il2cpp_codegen_subtract((int32_t)L_24, (int32_t)L_28));
-		Int32U5BU5D_t70F1BDC14B1786481B176D6139A5E3B87DC54C32* L_29 = __this->get_SeedArray_2();
+		Int32U5BU5D_t70F1BDC14B1786481B176D6139A5E3B87DC54C32* L_29 = __this->get_SeedArray_5();
 		int32_t L_30 = V_6;
 		int32_t L_31 = L_30;
 		int32_t L_32 = (L_29)->GetAtUnchecked(static_cast<il2cpp_array_size_t>(L_31));
@@ -31012,7 +31012,7 @@ IL_0083:
 		}
 	}
 	{
-		Int32U5BU5D_t70F1BDC14B1786481B176D6139A5E3B87DC54C32* L_33 = __this->get_SeedArray_2();
+		Int32U5BU5D_t70F1BDC14B1786481B176D6139A5E3B87DC54C32* L_33 = __this->get_SeedArray_5();
 		int32_t L_34 = V_6;
 		int32_t* L_35 = ((L_33)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_34)));
 		int32_t L_36 = *((int32_t*)L_35);
@@ -31047,8 +31047,8 @@ IL_00d9:
 		}
 	}
 	{
-		__this->set_inext_0(0);
-		__this->set_inextp_1(((int32_t)21));
+		__this->set_inext_3(0);
+		__this->set_inextp_4(((int32_t)21));
 		___Seed0 = 1;
 		return;
 	}
@@ -31069,9 +31069,9 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t Random_InternalSample_mC89F02F84C755C
 	int32_t V_1 = 0;
 	int32_t V_2 = 0;
 	{
-		int32_t L_0 = __this->get_inext_0();
+		int32_t L_0 = __this->get_inext_3();
 		V_1 = L_0;
-		int32_t L_1 = __this->get_inextp_1();
+		int32_t L_1 = __this->get_inextp_4();
 		V_2 = L_1;
 		int32_t L_2 = V_1;
 		int32_t L_3 = ((int32_t)il2cpp_codegen_add((int32_t)L_2, (int32_t)1));
@@ -31101,11 +31101,11 @@ IL_0019:
 
 IL_0024:
 	{
-		Int32U5BU5D_t70F1BDC14B1786481B176D6139A5E3B87DC54C32* L_6 = __this->get_SeedArray_2();
+		Int32U5BU5D_t70F1BDC14B1786481B176D6139A5E3B87DC54C32* L_6 = __this->get_SeedArray_5();
 		int32_t L_7 = V_1;
 		int32_t L_8 = L_7;
 		int32_t L_9 = (L_6)->GetAtUnchecked(static_cast<il2cpp_array_size_t>(L_8));
-		Int32U5BU5D_t70F1BDC14B1786481B176D6139A5E3B87DC54C32* L_10 = __this->get_SeedArray_2();
+		Int32U5BU5D_t70F1BDC14B1786481B176D6139A5E3B87DC54C32* L_10 = __this->get_SeedArray_5();
 		int32_t L_11 = V_2;
 		int32_t L_12 = L_11;
 		int32_t L_13 = (L_10)->GetAtUnchecked(static_cast<il2cpp_array_size_t>(L_12));
@@ -31136,14 +31136,14 @@ IL_0042:
 
 IL_004e:
 	{
-		Int32U5BU5D_t70F1BDC14B1786481B176D6139A5E3B87DC54C32* L_18 = __this->get_SeedArray_2();
+		Int32U5BU5D_t70F1BDC14B1786481B176D6139A5E3B87DC54C32* L_18 = __this->get_SeedArray_5();
 		int32_t L_19 = V_1;
 		int32_t L_20 = V_0;
 		(L_18)->SetAtUnchecked(static_cast<il2cpp_array_size_t>(L_19), (int32_t)L_20);
 		int32_t L_21 = V_1;
-		__this->set_inext_0(L_21);
+		__this->set_inext_3(L_21);
 		int32_t L_22 = V_2;
-		__this->set_inextp_1(L_22);
+		__this->set_inextp_4(L_22);
 		int32_t L_23 = V_0;
 		return L_23;
 	}
@@ -31176,6 +31176,15 @@ IL_0027:
 		L_5 = VirtFuncInvoker0< double >::Invoke(4 /* System.Double System.Random::Sample() */, __this);
 		int32_t L_6 = ___maxValue0;
 		return ((int32_t)((int32_t)((double)il2cpp_codegen_multiply((double)L_5, (double)((double)((double)L_6))))));
+	}
+}
+// System.Double System.Random::NextDouble()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR double Random_NextDouble_m6193384C8ECEB23AFF6395780879F93BD0FEEE68 (Random_t6C9E9775A149D0ADCFEB4B252C408F03EE870118 * __this, const RuntimeMethod* method)
+{
+	{
+		double L_0;
+		L_0 = VirtFuncInvoker0< double >::Invoke(4 /* System.Double System.Random::Sample() */, __this);
+		return L_0;
 	}
 }
 #ifdef __clang__
@@ -31504,7 +31513,7 @@ IL_0035:
 		Type_t * L_10 = ((Converter_t731F4A747D9F210BB63F96DB43AA8CAB20342E03_StaticFields*)il2cpp_codegen_static_fields_for(Converter_t731F4A747D9F210BB63F96DB43AA8CAB20342E03_il2cpp_TypeInfo_var))->get_typeofISerializable_6();
 		Type_t * L_11 = ___objectType0;
 		bool L_12;
-		L_12 = VirtFuncInvoker1< bool, Type_t * >::Invoke(103 /* System.Boolean System.Type::IsAssignableFrom(System.Type) */, L_10, L_11);
+		L_12 = VirtFuncInvoker1< bool, Type_t * >::Invoke(105 /* System.Boolean System.Type::IsAssignableFrom(System.Type) */, L_10, L_11);
 		if (!L_12)
 		{
 			goto IL_0051;
@@ -33400,7 +33409,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ObjectU5BU5D_tC1F4EE0DB0B7300255F5FD4AF64FE4C
 		RuntimeObject * L_7;
 		L_7 = InterfaceFuncInvoker0< RuntimeObject * >::Invoke(2 /* System.Object System.Runtime.Remoting.Messaging.IMethodReturnMessage::get_ReturnValue() */, IMethodReturnMessage_t4B84F631CB7E599CD495048748DE5E21B62390B0_il2cpp_TypeInfo_var, L_6);
 		bool L_8;
-		L_8 = VirtFuncInvoker1< bool, RuntimeObject * >::Invoke(102 /* System.Boolean System.Type::IsInstanceOfType(System.Object) */, L_5, L_7);
+		L_8 = VirtFuncInvoker1< bool, RuntimeObject * >::Invoke(104 /* System.Boolean System.Type::IsInstanceOfType(System.Object) */, L_5, L_7);
 		if (L_8)
 		{
 			goto IL_0032;
@@ -33588,10 +33597,10 @@ IL_0108:
 		Type_t * L_60;
 		L_60 = VirtFuncInvoker0< Type_t * >::Invoke(7 /* System.Type System.Reflection.ParameterInfo::get_ParameterType() */, L_59);
 		Type_t * L_61;
-		L_61 = VirtFuncInvoker0< Type_t * >::Invoke(92 /* System.Type System.Type::GetElementType() */, L_60);
+		L_61 = VirtFuncInvoker0< Type_t * >::Invoke(93 /* System.Type System.Type::GetElementType() */, L_60);
 		RuntimeObject * L_62 = V_9;
 		bool L_63;
-		L_63 = VirtFuncInvoker1< bool, RuntimeObject * >::Invoke(102 /* System.Boolean System.Type::IsInstanceOfType(System.Object) */, L_61, L_62);
+		L_63 = VirtFuncInvoker1< bool, RuntimeObject * >::Invoke(104 /* System.Boolean System.Type::IsInstanceOfType(System.Object) */, L_61, L_62);
 		if (L_63)
 		{
 			goto IL_013f;
@@ -37882,7 +37891,7 @@ IL_0059:
 		Type_t * L_19;
 		L_19 = RealProxy_GetProxiedType_m7AA8DF89E60E8C4A07B27674BC69AEC0D6B9ADAB(__this, /*hidden argument*/NULL);
 		bool L_20;
-		L_20 = VirtFuncInvoker1< bool, Type_t * >::Invoke(103 /* System.Boolean System.Type::IsAssignableFrom(System.Type) */, L_18, L_19);
+		L_20 = VirtFuncInvoker1< bool, Type_t * >::Invoke(105 /* System.Boolean System.Type::IsAssignableFrom(System.Type) */, L_18, L_19);
 		return L_20;
 	}
 }
@@ -39350,7 +39359,7 @@ IL_0029:
 	{
 		Type_t * L_11 = ___type0;
 		TypeU5BU5D_t85B10489E46F06CEC7C4B1CCBD0E01FAB6649755* L_12;
-		L_12 = VirtFuncInvoker0< TypeU5BU5D_t85B10489E46F06CEC7C4B1CCBD0E01FAB6649755* >::Invoke(44 /* System.Type[] System.Type::GetInterfaces() */, L_11);
+		L_12 = VirtFuncInvoker0< TypeU5BU5D_t85B10489E46F06CEC7C4B1CCBD0E01FAB6649755* >::Invoke(45 /* System.Type[] System.Type::GetInterfaces() */, L_11);
 		V_1 = L_12;
 		V_2 = 0;
 		goto IL_004e;
@@ -41132,7 +41141,7 @@ IL_0011:
 		Type_t * L_4 = ((RemotingSurrogateSelector_t1E36D625AE2C1058EA107D872577F1EFD04B5FCA_StaticFields*)il2cpp_codegen_static_fields_for(RemotingSurrogateSelector_t1E36D625AE2C1058EA107D872577F1EFD04B5FCA_il2cpp_TypeInfo_var))->get_s_cachedTypeObjRef_0();
 		Type_t * L_5 = ___type0;
 		bool L_6;
-		L_6 = VirtFuncInvoker1< bool, Type_t * >::Invoke(103 /* System.Boolean System.Type::IsAssignableFrom(System.Type) */, L_4, L_5);
+		L_6 = VirtFuncInvoker1< bool, Type_t * >::Invoke(105 /* System.Boolean System.Type::IsAssignableFrom(System.Type) */, L_4, L_5);
 		if (!L_6)
 		{
 			goto IL_0027;

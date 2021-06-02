@@ -20,11 +20,8 @@ public class MusicConductor : MonoBehaviour
     //How many seconds have passed since the song started
     public float dspSongTime;
     //the time since the lastCheckpoint
-    public float lastCheck = 0;
-    public float deathTime = 0;
-    public bool checkPoint;
-    public bool died;
 
+    public tracker track; //used to track the game when we reload
 
     //an AudioSource attached to this GameObject that will play the music.
     public AudioSource musicSource;
@@ -42,7 +39,10 @@ public class MusicConductor : MonoBehaviour
         dspSongTime = (float)AudioSettings.dspTime;
 
         //Start the music
-        musicSource.Play();
+        if (track.died != false)
+        {
+            musicSource.Play();
+        }
     }   
 
     // Update is called once per frame
@@ -50,15 +50,14 @@ public class MusicConductor : MonoBehaviour
     {
         // Calculating beats 
         //determine how many seconds since the song started
-        Debug.Log(deathTime);
-        if (checkPoint)
+        //Debug.Log(deathTime);
+        if (track.checkPoint && track.died)
         {
-            songPosition = (float)(lastCheck + AudioSettings.dspTime - deathTime); 
-            Debug.Log(songPosition);
+            musicSource.time = track.lastCheck;
+            musicSource.Play();
+            track.died = false;
         }
-        else {
-            songPosition = (float)(AudioSettings.dspTime - dspSongTime);
-        }
+        songPosition = (float)(AudioSettings.dspTime - dspSongTime);
         //Debug.Log(songPosition);
 
 

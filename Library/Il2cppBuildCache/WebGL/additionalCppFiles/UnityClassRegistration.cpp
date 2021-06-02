@@ -12,14 +12,20 @@ extern "C" void RegisterStaticallyLinkedModulesGranular()
 	void RegisterModule_Audio();
 	RegisterModule_Audio();
 
-	void RegisterModule_InputLegacy();
-	RegisterModule_InputLegacy();
-
 	void RegisterModule_IMGUI();
 	RegisterModule_IMGUI();
 
+	void RegisterModule_Input();
+	RegisterModule_Input();
+
+	void RegisterModule_InputLegacy();
+	RegisterModule_InputLegacy();
+
 	void RegisterModule_JSONSerialize();
 	RegisterModule_JSONSerialize();
+
+	void RegisterModule_ParticleSystem();
+	RegisterModule_ParticleSystem();
 
 	void RegisterModule_Physics();
 	RegisterModule_Physics();
@@ -27,14 +33,26 @@ extern "C" void RegisterStaticallyLinkedModulesGranular()
 	void RegisterModule_RuntimeInitializeOnLoadManagerInitializer();
 	RegisterModule_RuntimeInitializeOnLoadManagerInitializer();
 
+	void RegisterModule_Subsystems();
+	RegisterModule_Subsystems();
+
 	void RegisterModule_TextRendering();
 	RegisterModule_TextRendering();
+
+	void RegisterModule_TextCore();
+	RegisterModule_TextCore();
 
 	void RegisterModule_UI();
 	RegisterModule_UI();
 
+	void RegisterModule_VR();
+	RegisterModule_VR();
+
 	void RegisterModule_WebGL();
 	RegisterModule_WebGL();
+
+	void RegisterModule_XR();
+	RegisterModule_XR();
 
 }
 
@@ -134,8 +152,8 @@ class Collider; template <> void RegisterUnityClass<Collider>(const char*);
 class BoxCollider; template <> void RegisterUnityClass<BoxCollider>(const char*);
 class CapsuleCollider; 
 class CharacterController; 
-class MeshCollider; 
-class SphereCollider; 
+class MeshCollider; template <> void RegisterUnityClass<MeshCollider>(const char*);
+class SphereCollider; template <> void RegisterUnityClass<SphereCollider>(const char*);
 class TerrainCollider; 
 class WheelCollider; 
 class FakeComponent; 
@@ -149,13 +167,13 @@ class LODGroup;
 class MeshFilter; template <> void RegisterUnityClass<MeshFilter>(const char*);
 class OcclusionArea; 
 class OcclusionPortal; 
-class ParticleSystem; 
+class ParticleSystem; template <> void RegisterUnityClass<ParticleSystem>(const char*);
 class Renderer; template <> void RegisterUnityClass<Renderer>(const char*);
 class BillboardRenderer; 
 class LineRenderer; 
 class RendererFake; 
 class MeshRenderer; template <> void RegisterUnityClass<MeshRenderer>(const char*);
-class ParticleSystemRenderer; 
+class ParticleSystemRenderer; template <> void RegisterUnityClass<ParticleSystemRenderer>(const char*);
 class SkinnedMeshRenderer; 
 class SpriteMask; 
 class SpriteRenderer; 
@@ -275,7 +293,7 @@ void RegisterAllClasses()
 {
 void RegisterBuiltinTypes();
 RegisterBuiltinTypes();
-	//Total: 69 non stripped classes
+	//Total: 73 non stripped classes
 	//0. Animator
 	RegisterUnityClass<Animator>("Animation");
 	//1. AnimatorController
@@ -396,23 +414,31 @@ RegisterBuiltinTypes();
 	RegisterUnityClass<TimeManager>("Core");
 	//59. Transform
 	RegisterUnityClass<Transform>("Core");
-	//60. BoxCollider
+	//60. ParticleSystem
+	RegisterUnityClass<ParticleSystem>("ParticleSystem");
+	//61. ParticleSystemRenderer
+	RegisterUnityClass<ParticleSystemRenderer>("ParticleSystem");
+	//62. BoxCollider
 	RegisterUnityClass<BoxCollider>("Physics");
-	//61. Collider
+	//63. Collider
 	RegisterUnityClass<Collider>("Physics");
-	//62. PhysicMaterial
+	//64. MeshCollider
+	RegisterUnityClass<MeshCollider>("Physics");
+	//65. PhysicMaterial
 	RegisterUnityClass<PhysicMaterial>("Physics");
-	//63. PhysicsManager
+	//66. PhysicsManager
 	RegisterUnityClass<PhysicsManager>("Physics");
-	//64. Rigidbody
+	//67. Rigidbody
 	RegisterUnityClass<Rigidbody>("Physics");
-	//65. TextRendering::Font
+	//68. SphereCollider
+	RegisterUnityClass<SphereCollider>("Physics");
+	//69. TextRendering::Font
 	RegisterUnityClass<TextRendering::Font>("TextRendering");
-	//66. UI::Canvas
+	//70. UI::Canvas
 	RegisterUnityClass<UI::Canvas>("UI");
-	//67. UI::CanvasGroup
+	//71. UI::CanvasGroup
 	RegisterUnityClass<UI::CanvasGroup>("UI");
-	//68. UI::CanvasRenderer
+	//72. UI::CanvasRenderer
 	RegisterUnityClass<UI::CanvasRenderer>("UI");
 
 }

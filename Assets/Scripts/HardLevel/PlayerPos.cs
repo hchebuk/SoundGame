@@ -6,20 +6,22 @@ using UnityEngine.SceneManagement;
 public class PlayerPos : MonoBehaviour
 {
     private GameMaster gm;
-    public MusicConductor mc;
-    public Checkpoint check; 
+    public Checkpoint check;
+    public tracker track;
+
     void Start()
     {
         gm = GameObject.FindGameObjectWithTag("GM").GetComponent<GameMaster>();
         transform.position = gm.lastCheckPointPos;
+        
     }
 
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.Space)) {
+            track.died = true;
+            DontDestroyOnLoad(track);
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
-            mc.deathTime = (float)AudioSettings.dspTime;
-            mc.died = true;
         }
     }
 
