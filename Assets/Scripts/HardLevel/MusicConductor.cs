@@ -45,6 +45,8 @@ public class MusicConductor : MonoBehaviour
             musicSource.time = track.lastCheck;
             musicSource.Play();
             track.died = false;
+        } else {
+            musicSource.Play();
         }
     }   
 
