@@ -39,9 +39,12 @@ public class MusicConductor : MonoBehaviour
         dspSongTime = (float)AudioSettings.dspTime;
 
         //Start the music
-        if (track.died != false)
+        if (track.checkPoint && track.died)
         {
+            Debug.Log(track.lastCheck);
+            musicSource.time = track.lastCheck;
             musicSource.Play();
+            track.died = false;
         }
     }   
 
@@ -51,12 +54,7 @@ public class MusicConductor : MonoBehaviour
         // Calculating beats 
         //determine how many seconds since the song started
         //Debug.Log(deathTime);
-        if (track.checkPoint && track.died)
-        {
-            musicSource.time = track.lastCheck;
-            musicSource.Play();
-            track.died = false;
-        }
+       
         songPosition = (float)(AudioSettings.dspTime - dspSongTime);
         //Debug.Log(songPosition);
 

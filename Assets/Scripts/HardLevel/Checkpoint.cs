@@ -22,6 +22,7 @@ public class Checkpoint : MonoBehaviour
             gm.lastCheckPointPos.y = 0.3f; //make sure we don't start in the air
             track.lastCheck  = mc.musicSource.time;
             track.checkPoint = true;
+            Debug.Log(track.lastCheck);
             Debug.Log("Checkpoint given");            
         }
     }

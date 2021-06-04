@@ -3,7 +3,7 @@ public class MainMenu : MonoBehaviour
 { 
   public void QuitTheGame()
     {
-    Debug.Log("QUIT THE GAME");
-    Application.Quit(); 
+        Debug.Log("QUIT THE GAME");
+        Application.Quit(); 
     }
 }

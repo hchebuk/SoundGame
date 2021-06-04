@@ -68,6 +68,7 @@
     <Compile Include="Assets\Scripts\HardLevel\Rotator.cs" />
     <Compile Include="Assets\Scripts\HardLevel\ParticleConductor.cs" />
     <Compile Include="Assets\Scripts\EasyLevel\Level0ParticleConductor.cs" />
+    <Compile Include="Assets\Scripts\tracker.cs" />
     <Compile Include="Assets\Scripts\HardLevel\GameMaster.cs" />
     <Compile Include="Assets\Scripts\HardLevel\PlatformConductor.cs" />
     <Compile Include="Assets\Scripts\HardLevel\CloudMovement.cs" />
@@ -75,7 +76,7 @@
     <Compile Include="Assets\Scripts\HardLevel\LevelSelector.cs" />
     <Compile Include="Assets\Scripts\HardLevel\BlossomConductor.cs" />
     <Compile Include="Assets\Scripts\HardLevel\WinTrigger.cs" />
-    <Compile Include="Assets\Scripts\tracker.cs" />
+    <Compile Include="Assets\Scripts\PauseMenu.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />

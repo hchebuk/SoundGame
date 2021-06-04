@@ -6,6 +6,8 @@ using UnityEngine.SceneManagement;
 public class LevelSelector : MonoBehaviour
 {
     public GameObject[] levels;
+    public GameObject selector;
+    public GameObject MainMenu;
     public int selected = 0;
 
     public void Next() {
@@ -38,5 +40,11 @@ public class LevelSelector : MonoBehaviour
             temp = "Level 1";
         }
         SceneManager.LoadScene(temp, LoadSceneMode.Single);
+    }
+
+    public void SelectReturn() 
+    {
+        selector.SetActive(false);
+        MainMenu.SetActive(true);
     }
 }
